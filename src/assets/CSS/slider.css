@@ -1,0 +1,97 @@
+.slider-track {
+  stroke: transparent;
+}
+
+.slider-trough, .slider-overlay {
+  stroke-linecap: round;
+}
+
+.slider-trough {
+  stroke: #F1F1F5;
+}
+
+.slider-overlay {
+  /*stroke: rgba(255, 0, 0, 0.23);*/
+  stroke: transparent;
+}
+
+.slider-container .top-axis {
+  height: 0;
+}
+
+/* shape */
+circle.slider-scoreBall {
+  /*fill: #C895FC;*/
+  fill: rgba(214, 213, 223, 0.5);
+  stroke: none;
+}
+
+circle.slider-shapeBall {
+  /*fill: rgba(74, 144, 226, 0.5);*/
+  fill: #76757F;
+  stroke: none;
+}
+
+/* Text */
+.axis {
+  float: left;
+  padding-left: 0;
+  height: 0;
+}
+
+.axis .descriptor-container {
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+}
+
+.top-axis .slider-descriptor-text {
+  margin-top: 1rem;
+}
+
+.bottom-axis .slider-descriptor-text {
+  margin-top: -1rem;
+}
+
+.slider-descriptor-text {
+  text-align: center;
+  word-wrap: break-word;
+  word-break: normal;
+  line-height: 100%;
+  /*color: #C1BFD0;*/
+  color: #868491;
+  position: relative;
+  font-size: 14px;
+  /*margin-top: -1rem;*/
+}
+
+.slider-tooltip {
+  font-weight: bold;
+  font-size: 1.5rem
+}
+
+.slider-rotation-axis {
+  width: max-content;
+}
+
+.slider-rotation-descriptor-text {
+  text-align: center;
+  width: max-content;
+  word-wrap: break-word;
+  word-break: normal;
+  line-height: 100%;
+  /*color: #868491;*/
+  color: rgb(193, 191, 208);
+  font-weight: 500;
+  position: relative;
+  float: left;
+  display: inline-block;
+  font-size: 12px;
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  -ms-transform-origin: 0% 50%;
+  -webkit-transform-origin: 0% 50%;
+  transform-origin: 0% 50%;
+  /*background-color: rgba(71, 207, 115, 0.26);*/
+}

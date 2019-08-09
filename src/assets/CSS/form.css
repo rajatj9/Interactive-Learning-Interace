@@ -1,0 +1,89 @@
+.form-auth {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+
+.form-auth .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.form-auth .form-control:focus {
+  z-index: 2;
+}
+
+.form-auth input[type="text"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  background-color: rgba(255, 0, 0, 0);
+}
+
+.input {
+  width: 100%;
+  /*height: 50px;*/
+  height: 48px;
+  display: block;
+  /*margin: 0 auto 15px;*/
+  margin: 0 auto 0;
+  /*padding: 0 15px;*/
+  padding: 0 10px;
+  border: none;
+  border-bottom: 2px solid #ebebeb;
+}
+
+.input:focus {
+  outline: none;
+  /*border-bottom-color: #ff5a4b !important;*/
+  border-bottom-color: #4e8fdf !important;
+}
+
+.input:hover {
+  border-bottom-color: #dcdcdc;
+}
+
+.input:invalid {
+  box-shadow: none;
+}
+
+.input.invalid {
+  box-shadow: none;
+  border-bottom-color: #ff5a4b !important;
+}
+
+.pass:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px white inset;
+}
+
+.error-offset {
+  margin-bottom: 24px;
+}
+
+.warning-message {
+  text-align: left;
+  padding-left: 10px;
+  color: #ff5a4b;
+  margin-bottom: -20px;
+}
+
+.form-group {
+  padding: 0 1.2em;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #9e97aa;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #9e97aa;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #9e97aa;
+}

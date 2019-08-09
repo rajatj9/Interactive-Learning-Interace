@@ -1,0 +1,54 @@
+@media screen and (orientation: landscape) {
+  .portrait-orientation {
+    transform: rotate(-90deg);
+    transform-origin: left top;
+    width: 100vh !important;
+    height: 100vw !important;
+    overflow-x: hidden;
+    position: absolute;
+    top: 100%;
+    /*left: 0;*/
+    /*right: 0;*/
+    /*background-color: #9e53d7;*/
+  }
+
+  .portrait-orientation .carousel-container .carousel {
+    height: 100vw !important;
+    width: 100vh !important;
+  }
+
+  .landscape-orientation {
+    left: 0px;
+    right: 0px;
+  }
+
+  .portrait-orientation .rotation-modal .warning-modal-container {
+    width: 60%;
+  }
+}
+
+@media screen and (orientation: portrait) {
+  .landscape-orientation {
+    transform: rotate(-90deg);
+    transform-origin: left top;
+    width: 100vh !important;
+    height: 100vw !important;
+    overflow-x: hidden;
+    position: fixed;
+    top: 100%;
+  }
+
+  .landscape-orientation .carousel-container .carousel {
+    height: 100vw !important;
+    width: 100vh !important;
+  }
+
+  .portrait-orientation {
+    left: 0px;
+    right: 0px;
+  }
+
+  .landscape-orientation .rotation-modal .warning-modal-container {
+    width: 40%;
+  }
+}

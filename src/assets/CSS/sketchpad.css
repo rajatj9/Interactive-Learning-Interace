@@ -1,0 +1,45 @@
+/* sketchpad */
+.sketchpad-container {
+  height: 100%;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
+}
+
+/* shape */
+circle.scoreBall {
+  /*fill: #C895FC;*/
+  /*fill: #FC95C0;*/
+  fill: #FF0000;
+  stroke: none;
+}
+
+circle.shapeBall {
+  /*fill: rgba(74, 144, 226, 0.5);*/
+  fill: rgba(110, 74, 226, 0.51);
+  stroke: none;
+}
+
+circle.swipeShapeBall {
+  fill: rgba(252, 149, 192, 0.4);
+  stroke: #FF0000;
+  stroke-linecap: butt;
+}
+
+.hideElements {
+  display: none;
+}
+
+circle.elastic-cog-scoreBall {
+  opacity: 0;
+}
+
+circle.elastic-cog-swipeShapeBall {
+  fill: rgba(42, 42, 42, 0.2);
+  stroke: rgba(42, 42, 42, 0.6);
+  stroke-width: 2px;
+  stroke-linecap: butt;
+}

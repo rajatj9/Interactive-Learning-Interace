@@ -1,0 +1,146 @@
+/* svg container */
+.swipe-wrapper {
+  padding: 0rem 1rem;
+}
+
+/* axis */
+.grid line {
+  fill: none;
+  /*stroke: #EBEDF2;*/
+  stroke: #a8aaaf;
+  opacity: 0.7;
+  stroke-width: 1.0px;
+  stroke-dasharray: 8, 8;
+  shape-rendering: crispEdges;
+}
+
+.chart line.axis {
+  fill: none;
+  /*stroke: #EBEDF2;*/
+  stroke: #a8aaaf;
+  opacity: 0.6;
+  stroke-width: 1.1px;
+  stroke-dasharray: 0, 0;
+  shape-rendering: crispEdges;
+}
+
+.chart line.baseGrid {
+  stroke: none;
+}
+
+.growth-line {
+  fill: none;
+  /*stroke: #4A90E2;*/
+  /*stroke: #AE91EE;*/
+  stroke: rgba(27, 5, 75, 0.72);
+  stroke-width: 2.0px;
+}
+
+/* axis tick text */
+.axis text {
+  color: #C1BFD0;
+  fill: #C1BFD0;
+  font-size: 12px;
+}
+
+.swipe-descriptor-text {
+  text-align: center;
+  word-wrap: break-word;
+  word-break: normal;
+  line-height: 100%;
+  color: #868491;
+  position: relative;
+  font-size: 12px;
+  margin-top: -1em;
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  /*background-color: rgba(71, 207, 115, 0.26);*/
+}
+
+.rotation-descriptor-text {
+  text-align: center;
+  width: max-content;
+  word-wrap: break-word;
+  word-break: normal;
+  line-height: 100%;
+  /*color: #868491;*/
+  /*color: #C1BFD0;*/
+  color: #A4AAB0;
+  position: relative;
+  float: left;
+  display: inline-block;
+  font-size: 12px;
+  -ms-transform: rotate(90deg); /* IE 9 */
+  -webkit-transform: rotate(90deg); /* Safari 3-8 */
+  transform: rotate(90deg);
+  -ms-transform-origin: 0% 50%; /* IE 9 */
+  -webkit-transform-origin: 0% 50%; /* Safari 3-8 */
+  transform-origin: 0% 50%;
+  /*background-color: rgba(71, 207, 115, 0.26);*/
+}
+
+.swipe-axis {
+  float: left;
+  padding-left: 0;
+  height: 0;
+}
+
+.rotation-axis {
+  width: max-content;
+}
+
+.question-wrapper .sketchpad-container .swipe-axis {
+  position: relative;
+  z-index: -99;
+}
+
+.axis .minor-tick {
+  stroke: rgba(168, 170, 175, 0.75);
+}
+
+.axis .major-tick {
+  stroke: #a8aaaf;
+}
+
+/* tooltip */
+.visual line.marking {
+  fill: none;
+  /*stroke: rgba(166, 110, 223, 0.75);*/
+  /*stroke: rgba(223, 110, 209, 0.5);*/
+  /*stroke: rgba(252, 149, 192, 0.75);*/
+  stroke: rgba(255, 0, 0, 0.9);
+  stroke-width: 1.8px;
+  shape-rendering: crispEdges;
+}
+
+.visual line.marking.baseline {
+  /*stroke: rgba(166, 110, 223, 0.95);*/
+  /*stroke: rgba(223, 110, 209, 0.9);*/
+  /*stroke: rgba(252, 149, 192, 0.9);*/
+  stroke: rgba(255, 0, 0, 1);
+  stroke-width: 2.0px;
+  stroke-dasharray: 8, 8;
+}
+
+.major-tooltip text {
+  /*stroke: rgba(166, 110, 223, 1);*/
+  /*stroke: #DF6ED4;*/
+  /*stroke: #FC95C0;*/
+  /*fill: #FC95C0;*/
+  stroke: #FF0000;
+  fill: #FF0000;
+}
+
+.major-tooltip rect {
+  stroke: #fff;
+  stroke-width: 1;
+  fill: #fff;
+}
+
+@media (max-width: 420px) {
+  .grid line {
+    stroke: rgba(168, 170, 175, 0.30);
+    stroke-dasharray: 5, 5;
+  }
+}

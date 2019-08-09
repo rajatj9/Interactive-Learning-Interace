@@ -1,0 +1,27 @@
+.question-container {
+  text-align: left;
+  margin: 0.5rem 0;
+  /*background: lavender;*/
+}
+
+.question-container .sequence.sequence-text {
+  font-size: 18px;
+  position: relative;
+  color: #4E8FDF;
+  top: -6px;
+  font-weight: bolder;
+}
+
+.question-container .total-length-text {
+  font-size: 10px;
+  position: relative;
+  left: -4px;
+  top: -3px;
+  /*letter-spacing: -1px;*/
+}
+
+.question-container .question-title {
+  margin-left: 0.75rem;
+  /*word-break: break-all;*/
+  word-break: break-word;
+}
