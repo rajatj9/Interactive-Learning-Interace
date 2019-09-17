@@ -175,7 +175,7 @@
         if (this.value != null) {
           console.log(this.value, "update width nodes");
           this.updateNodesPosition(this.value);
-        };
+        }
       },
       getLinkPointHeight(d, isTarget) {
         var score;
