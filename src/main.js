@@ -5,6 +5,15 @@ import axios from 'axios';
 import {router} from './routes';
 import {store} from './store/index';
 
+
+import { BProgress } from 'bootstrap-vue'
+Vue.component('b-progress', BProgress)
+
+import VueKatex from 'vue-katex'
+import 'katex/dist/katex.min.css';
+
+Vue.use(VueKatex)
+
 Vue.use(Vuelidate);
 console.log(process.env.VUE_APP_API_HOST)
 axios.defaults.baseURL = process.env.VUE_APP_API_HOST;
